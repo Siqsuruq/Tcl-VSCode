@@ -1,0 +1,73 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Tcl",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+            "include": "#variables"
+        },
+        {
+            "include": "#control"
+        },
+		{
+			"include": "#nxclasses"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.tcl",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"variables": {
+            "patterns": [
+                {
+                    "name": "variable.other.tcl",
+                    "match": "\\$[a-zA-Z_]+\\b"
+                }
+            ]
+        },
+		"strings": {
+			"name": "string.quoted.double.tcl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.tcl",
+					"match": "\\\\."
+				}
+			]
+		}, 
+		"control": {
+            "patterns": [
+                {
+                    "name": "keyword.control.flow.tcl",
+                    "match": "\\b(break|continue)\\b"
+                },
+                {
+                    "name": "keyword.control.namespace.tcl",
+                    "match": "\\b(namespace|namespace eval|namespace export)\\b"
+                },
+                {
+                    "name": "keyword.control.error.tcl",
+                    "match": "\\b(error|catch|return\\s+-code)\\b"
+                }
+            ]
+        
+   		},
+		"comments": {
+			"name": "comment.line.tcl",
+			"match": "#.*$"
+		}
+	},
+	"scopeName": "source.tcl"
+}
