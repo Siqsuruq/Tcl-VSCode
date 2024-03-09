@@ -1,4 +1,53 @@
 {
+    "Package Files": {
+        "prefix": "package files",
+        "body": [
+            "package files ${1:pkgname}"
+        ],
+        "description": "Lists all files forming part of package."
+    },
+    "Package Forget": {
+        "prefix": "package forget",
+        "body": [
+            "package forget ${1:pkgnames}"
+        ],
+        "description": "Removes all information about each specified package from this interpreter, including information provided by both package ifneeded and package provide."
+    },
+    "Package Ifneeded": {
+        "prefix": "package ifneeded",
+        "body": [
+            "package ifneeded $1"
+        ],
+        "description": "Package Ifneeded"
+    },
+    "Package Names": {
+        "prefix": "package names",
+        "body": [
+            "package names"
+        ],
+        "description": "Returns a list of the names of all packages"
+    },
+    "Package Present": {
+        "prefix": "package present",
+        "body": [
+            "package present $1"
+        ],
+        "description": "This command is equivalent to package require except that it does not try and load the package if it is not already loaded"
+    },
+    "Package Provide": {
+        "prefix": "package provide",
+        "body": [
+            "package provide ${1:pkgname} ${0:version}"
+        ],
+        "description": "This command is invoked to indicate that version ${version} of package ${pkgname} is now present in the interpreter."
+    },
+    "Package Require": {
+        "prefix": "package require",
+        "body": [
+            "package require $1"
+        ],
+        "description": "Require a Tcl package"
+    },
     "for": {
         "prefix": "for",
         "body": [

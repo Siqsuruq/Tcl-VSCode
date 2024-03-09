@@ -23,10 +23,40 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.tcl",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "package.command.tcl",
+					"match": "\\b(package)\\b"
+				},
+				{
+					"name": "package.subcommand.tcl",
+					"match": "(?<=\\bpackage\\b\\s+)(\\w+)"
+				},
+				{
+					"name": "keyword.control.tcl",
+					"match": "\\b(if|elseif|else|while|for|foreach|return|break|continue)\\b"
+				},
+				{
+					"name": "keyword.operator.tcl",
+					"match": "\\b(puts|set)\\b"
+				},
+				{
+					"name": "keyword.lists.tcl",
+					"match": "\\b(lappend|lassign|lindex|linsert|list|llength|lmap|lrange|lremove|lrepeat|lreplce|lreverse)\\b"
+				},
+				{
+					"name": "keyword.proc.tcl",
+					"match": "\\b(proc)\\b"
+				},
+				{
+					"name": "entity.name.function.tcl",
+					"match": "(?<=\\bproc\\b\\s+)(\\w+)"
+				},
+				{
+					"name": "variable.name.tcl",
+					"match": "(?<=\\bset\\b\\s+)(\\w+)"
+				}
+			]
 		},
 		"variables": {
             "patterns": [
@@ -49,10 +79,6 @@
 		}, 
 		"control": {
             "patterns": [
-                {
-                    "name": "keyword.control.flow.tcl",
-                    "match": "\\b(break|continue)\\b"
-                },
                 {
                     "name": "keyword.control.namespace.tcl",
                     "match": "\\b(namespace|namespace eval|namespace export)\\b"

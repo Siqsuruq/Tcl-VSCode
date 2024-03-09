@@ -15,6 +15,11 @@
     "url": "https://github.com/Siqsuruq/Tcl-VSCode"
   },
   "contributes": {
+    "themes": [{
+          "label": "Tcl/Tk Theme",
+          "uiTheme": "vs-dark",
+          "path": "./TclCustomTheme.json"
+      }],
     "languages": [{
       "id": "tcl",
       "aliases": ["Tcl", "tcl"],

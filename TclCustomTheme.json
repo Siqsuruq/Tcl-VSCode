@@ -1,0 +1,66 @@
+{
+    "name": "Tcl/Tk Theme",
+    "type": "dark",
+    "tokenColors": [
+        {
+            "scope": "keyword.control.tcl",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#457020"
+            }
+        },
+        {
+            "scope": "keyword.operator.tcl",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#457020"
+            }
+        },
+        {
+            "scope": "keyword.lists.tcl",
+            "settings": {
+                "foreground": "#455000"
+            }
+        },
+        {
+            "scope":"keyword.proc.tcl",
+            "settings":{
+                "fontStyle":"bold",
+                "foreground":"#E63946"
+            }
+        },
+        {
+            "scope":"entity.name.function.tcl",
+            "settings":{
+                "fontStyle":"italic",
+                "foreground":"#207068"
+            }
+        },
+        {
+            "scope":"variable.name.tcl",
+            "settings":{
+                "foreground":"#CC535D"
+            }
+        },
+        {
+            "scope": "variable.other.tcl",
+            "settings":{
+                "foreground":"#CC535D"
+            }
+        },
+        {
+            "scope": "string.quoted.double.tcl",
+            "settings":{
+                "foreground":"#A8DADC"
+            }
+        },
+        {
+            "scope": "comment.line.tcl",
+            "settings":{
+                "foreground":"#2D6A4F"
+            }
+        }
+
+    ]
+}
+
