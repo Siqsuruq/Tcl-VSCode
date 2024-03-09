@@ -16,7 +16,7 @@
     "Package Ifneeded": {
         "prefix": "package ifneeded",
         "body": [
-            "package ifneeded $1"
+            "package ifneeded ${1:pkgname} ${0:version}"
         ],
         "description": "Package Ifneeded"
     },
@@ -30,7 +30,7 @@
     "Package Present": {
         "prefix": "package present",
         "body": [
-            "package present $1"
+            "package present ${1:pkgname}"
         ],
         "description": "This command is equivalent to package require except that it does not try and load the package if it is not already loaded"
     },
@@ -44,9 +44,30 @@
     "Package Require": {
         "prefix": "package require",
         "body": [
-            "package require $1"
+            "package require ${1:pkgname}"
         ],
         "description": "Require a Tcl package"
+    },
+    "Package Versions": {
+        "prefix": "package versions",
+        "body": [
+            "package versions ${1:pkgname}"
+        ],
+        "description": "Returns a list of all the version numbers of ${pkgname} for which information has been provided by package ifneeded commands.",
+    },
+    "Package Vsatisfies": {
+        "prefix": "package vsatisfies",
+        "body": [
+            "package vsatisfies ${1:version} ${0:requirement}"
+        ],
+        "description": "Returns 1 if the ${version} satisfies at least one of the given ${requirements}, and 0 otherwise. Each requirement is allowed to have any of the forms: min , min- , min-max. Read more on the official documentation page: https://tcl.tk/man/tcl9.0/TclCmd/package.html"
+    },
+    "Package Prefer": {
+        "prefix": "package prefer ",
+        "body": [
+            "package prefer ${1| ,latest,stable|}"
+        ],
+        "description": "Read more on the official documentation page: https://tcl.tk/man/tcl9.0/TclCmd/package.html"
     },
     "for": {
         "prefix": "for",
