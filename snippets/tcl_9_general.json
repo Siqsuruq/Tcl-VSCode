@@ -53,7 +53,7 @@
         "body": [
             "package versions ${1:pkgname}"
         ],
-        "description": "Returns a list of all the version numbers of ${pkgname} for which information has been provided by package ifneeded commands.",
+        "description": "Returns a list of all the version numbers of ${pkgname} for which information has been provided by package ifneeded commands."
     },
     "Package Vsatisfies": {
         "prefix": "package vsatisfies",
@@ -159,116 +159,5 @@
             "}"
         ],
         "description": "Switch Block"
-    },
-    "oo::class create": {
-        "prefix": "oo::class create",
-        "body": [
-            "oo::class create ${1:name} {",
-            "\t${2:superclass s}",
-            "\tconstructor {} {",
-            "\t\t$3",
-            "\t}",
-            "\tmethod ${4:m} {} {",
-            "\t\t$0",
-            "\t}",
-            "}"
-        ],
-        "description": "Class Create"
-    },
-    "tk_chooseDirectory": {
-        "prefix": "tk_chooseDirectory",
-        "body": [
-            "tk_chooseDirectory ${-initialdir dirname -mustexist boolean -title titleString}"
-        ],
-        "description": "Choose Directory"
-    },
-    "tk_getOpenFile": {
-        "prefix": "tk_getOpenFile",
-        "body": [
-            "tk_getOpenFile -filetypes {",
-            "\t\t{{Text Files}       {.txt}        }",
-            "\t\t{{All Files}        *             }",
-            "\t}"
-        ],
-        "description": "Open File Dialog"
-    },
-    "tk_getSaveFile": {
-        "prefix": "tk_getSaveFile",
-        "body": [
-            "tk_getSaveFile -filetypes {",
-            "\t\t{{Text Files}       {.txt}        }",
-            "\t\t{{All Files}        *             }",
-            "\t}"
-        ],
-        "description": "Save File Dialog"
-    },
-    "tk_messageBox": {
-        "prefix": "tk_messageBox",
-        "body": [
-            "tk_messageBox ${-message msg}"
-        ],
-        "description": "Message Box"
-    },
-    "NX create class": {
-        "prefix": "class",
-        "body": [
-            "nx::Class create ${1:ClassName} {",
-            "\t$0",
-            "}"
-        ],
-        "description": "Create class"
-    },
-    "NX create class from superclass": {
-        "prefix": "class",
-        "body": [
-            "nx::Class create ${2:ClassName} -superclasses ${1:superClassNames} {",
-            "\t$0",
-            "}"
-        ],
-        "description": "If superClassNames is not specified, returns the superclasses of the class. If provided, the class becomes the subclass of superClassNames."
-    },
-    "NX create class with constructor": {
-        "prefix": "class",
-        "body": [
-            "nx::Class create ${1:ClassName} {",
-            "\t:method init {${2:args}} {",
-            "\t\t$0",
-            "\t}",
-            "}"
-        ],
-        "description": "Create class with constructor"
-    },
-    "Class property": {
-        "prefix": "property",
-        "body": [
-            ":property ${1:name}:object,type=${2:type}"
-        ],
-        "description": "Class property"
-    },
-
-    "Class variable": {
-        "prefix": "variable",
-        "body": [
-            ":variable ${1:name}:object,type=${2:type}"
-        ],
-        "description": "Class property"
-    },
-
-    "Public method": {
-        "prefix": "pubmethod",
-        "body": [
-            ":public method ${1:name} {${2:var1}, type=${3:type1} ${4:var2}, type=${5:type1}} {",
-            "\t\n}"
-        ],
-        "description": "public class method"
-    },
-
-    "Private method": {
-        "prefix": "privmethod",
-        "body": [
-            ":private method ${1:name} {${2:var1}, type=${3:type1} ${4:var2}, type=${5:type1}} {",
-            "\t\n}"
-        ],
-        "description": "private class method"
     }
 }

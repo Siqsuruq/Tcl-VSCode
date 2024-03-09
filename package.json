@@ -34,7 +34,23 @@
     "snippets": [
       {
         "language": "tcl",
-        "path": "./snippets/tcl.json"
+        "path": "./snippets/tcl_9_general.json"
+      },
+      {
+        "language": "tcl",
+        "path": "./snippets/tcl_naviserver.json"
+      },
+      {
+        "language": "tcl",
+        "path": "./snippets/tcl_nx.json"
+      },
+      {
+        "language": "tcl",
+        "path": "./snippets/tcl_oo.json"
+      },
+      {
+        "language": "tcl",
+        "path": "./snippets/tk_9.json"
       }
     ]
   }

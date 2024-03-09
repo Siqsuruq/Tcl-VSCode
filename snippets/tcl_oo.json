@@ -1,0 +1,17 @@
+{
+    "oo::class create": {
+        "prefix": "oo::class create",
+        "body": [
+            "oo::class create ${1:name} {",
+            "\t${2:superclass s}",
+            "\tconstructor {} {",
+            "\t\t$3",
+            "\t}",
+            "\tmethod ${4:m} {} {",
+            "\t\t$0",
+            "\t}",
+            "}"
+        ],
+        "description": "Class Create"
+    }
+}

@@ -3,6 +3,20 @@
     "type": "dark",
     "tokenColors": [
         {
+            "scope": "package.command.tcl",
+            "settings":{
+                "fontStyle":"bold",
+                "foreground":"#457B9D"
+            }
+        },
+        {
+            "scope": "package.subcommand.tcl",
+            "settings":{
+                "fontStyle":"bold",
+                "foreground":"#457BDD"
+            }
+        },
+        {
             "scope": "keyword.control.tcl",
             "settings": {
                 "fontStyle": "bold",
