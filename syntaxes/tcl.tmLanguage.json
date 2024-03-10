@@ -16,7 +16,7 @@
         },
         {
             "include": "#control"
-        },
+		},
 		{
 			"include": "#nxclasses"
 		}
@@ -31,6 +31,22 @@
 				{
 					"name": "package.subcommand.tcl",
 					"match": "(?<=\\bpackage\\b\\s+)(\\w+)"
+				},
+				{
+					"name": "ns_register.command.tcl",
+					"match": "\\b(ns_adp_registeradp|ns_adp_registerproc|ns_adp_registerscript)\\b"
+				},
+				{
+					"name": "ns_adp_ctl.command.tcl",
+					"match": "\\b(ns_adp_ctl)\\b"
+				},
+				{
+					"name": "ns_adp_ctl.subcommand.tcl",
+					"match": "(?<=\\bns_adp_ctl\\b\\s+)(\\w+)"
+				},
+				{
+					"name": "ns_adp_exception.command.tcl",
+					"match": "\\b(ns_adp_abort|ns_adp_break|ns_adp_exception|ns_adp_return)\\b"
 				},
 				{
 					"name": "keyword.control.tcl",

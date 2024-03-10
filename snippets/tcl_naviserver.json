@@ -1,0 +1,44 @@
+{
+    "Register ADP": {
+        "prefix": "ns_adp_registeradp",
+        "body": [
+            "ns_adp_registeradp ${1:tag} ${2:endtag} {",
+            "\t${0:adpstring}",
+            "}"
+        ],
+        "description": "This command registers an ADP code fragment to be invoked when the specified tag is encountered while parsing an ADP. The tag argument specifies the tag that will trigger invocation of the ADP fragment, which is specified by the adpstring argument."
+    },
+    "Register Proc": {
+        "prefix": "ns_adp_registerproc",
+        "body": [
+            "ns_adp_registerproc ${1:tag} ${2:endtag} {",
+            "\t${0:proc}",
+            "}"
+        ],
+        "description": "This command registers a Tcl procedure to be evaluated when the given tag is encountered."
+    },
+    "Register Script": {
+        "prefix": "ns_adp_registerscript",
+        "body": [
+            "ns_adp_registerscript ${1:tag} ${2:endtag} {",
+            "\t${0:script}",
+            "}"
+        ],
+        "description": "This command registers a Tcl script to be evaluated when the given tag is encountered. "
+    },
+    "ADP control command": {
+        "prefix": "ns_adp_ctl",
+        "body": [
+            "ns_adp_ctl ${1|autoabort,bufsize,cache,detailerror,displayerror,expire,safe,singlescript,stream,stricterror,trace,trimspace|} ${0:value}"
+        ],
+        "description": "This command enables control of the current ADP execution environment."
+    },
+    ,
+    "ADP exception management": {
+        "prefix": "ns_adp_",
+        "body": [
+            "ns_adp_${1|abort,break,exception,return|}"
+        ],
+        "description": "This command enables control of the current ADP execution environment."
+    }
+}

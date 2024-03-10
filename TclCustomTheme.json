@@ -12,8 +12,34 @@
         {
             "scope": "package.subcommand.tcl",
             "settings":{
-                "fontStyle":"bold",
                 "foreground":"#457BDD"
+            }
+        },
+        {
+            "scope": "ns_register.command.tcl",
+            "settings":{
+                "fontStyle":"bold",
+                "foreground":"#457B9D"
+            }
+        },
+        {
+            "scope": "ns_adp_ctl.command.tcl",
+            "settings":{
+                "fontStyle":"bold",
+                "foreground":"#457B9D"
+            }
+        },
+        {
+            "scope": "ns_adp_ctl.subcommand.tcl",
+            "settings":{
+                "foreground":"#457BDD"
+            }
+        },
+        {
+            "scope": "ns_adp_exception.command.tcl",
+            "settings":{
+                "fontStyle":"bold",
+                "foreground":"#457B9D"
             }
         },
         {
