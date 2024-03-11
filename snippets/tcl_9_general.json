@@ -137,7 +137,7 @@
         "body": [
             "catch {${1:body}} ${2:var}"
         ],
-        "description": "Catch Block"
+        "description": "Evaluate script and trap exceptional returns."
     },
     "try": {
         "prefix": "try",
@@ -159,5 +159,12 @@
             "}"
         ],
         "description": "Switch Block"
+    },
+    "Dictionary": {
+        "prefix": "dict",
+        "body": [
+            "dict ${1|append,exists,filter,for,get,getdef,getwithdefault,incr,info,keys,lappend,map,merge,remove,replace,set,size,unset,update,values,with|} $${0:dictName}"
+        ],
+        "description": "Manipulate dictionaries"
     }
 }

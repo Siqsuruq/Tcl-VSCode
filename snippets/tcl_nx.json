@@ -1,6 +1,6 @@
 {
     "NX create class": {
-        "prefix": "nx class",
+        "prefix": "nxc",
         "body": [
             "nx::Class create ${1:ClassName} {",
             "\t$0",
@@ -9,7 +9,7 @@
         "description": "Create class"
     },
     "NX create class from superclass": {
-        "prefix": "class",
+        "prefix": "nxcs",
         "body": [
             "nx::Class create ${2:ClassName} -superclasses ${1:superClassNames} {",
             "\t$0",
@@ -18,7 +18,7 @@
         "description": "If superClassNames is not specified, returns the superclasses of the class. If provided, the class becomes the subclass of superClassNames."
     },
     "NX create class with constructor": {
-        "prefix": "class",
+        "prefix": "nxci",
         "body": [
             "nx::Class create ${1:ClassName} {",
             "\t:method init {${2:args}} {",
@@ -31,7 +31,7 @@
     "Class property": {
         "prefix": "property",
         "body": [
-            ":property ${1:name}:object,type=${2:type}"
+            ":property ${1:name}:object,type=${2:type}\n"
         ],
         "description": "Class property"
     },
@@ -41,11 +41,11 @@
         "body": [
             ":variable ${1:name}:object,type=${2:type}"
         ],
-        "description": "Class property"
+        "description": "Class variable"
     },
 
     "Public method": {
-        "prefix": "pubmethod",
+        "prefix": "nxpm",
         "body": [
             ":public method ${1:name} {${2:var1}, type=${3:type1} ${4:var2}, type=${5:type1}} {",
             "\t\n}"
@@ -54,7 +54,7 @@
     },
 
     "Private method": {
-        "prefix": "privmethod",
+        "prefix": "nxprm",
         "body": [
             ":private method ${1:name} {${2:var1}, type=${3:type1} ${4:var2}, type=${5:type1}} {",
             "\t\n}"

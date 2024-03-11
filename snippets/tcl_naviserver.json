@@ -33,7 +33,6 @@
         ],
         "description": "This command enables control of the current ADP execution environment."
     },
-    ,
     "ADP exception management": {
         "prefix": "ns_adp_",
         "body": [

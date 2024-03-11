@@ -77,6 +77,19 @@
             }
         },
         {
+            "scope":"keyword.dict.tcl",
+            "settings":{
+                "fontStyle":"bold",
+                "foreground":"#457020"
+            }
+        },
+        {
+            "scope":"dict.subcommand.tcl",
+            "settings":{
+                "foreground":"#207068"
+            }
+        },
+        {
             "scope":"variable.name.tcl",
             "settings":{
                 "foreground":"#CC535D"

@@ -69,6 +69,14 @@
 					"match": "(?<=\\bproc\\b\\s+)(\\w+)"
 				},
 				{
+					"name": "keyword.dict.tcl",
+					"match": "\\b(dict)\\b"
+				},
+				{
+					"name": "dict.subcommand.tcl",
+					"match": "(?<=\\bdict\\b\\s+)(\\w+)"
+				},
+				{
 					"name": "variable.name.tcl",
 					"match": "(?<=\\bset\\b\\s+)(\\w+)"
 				}
