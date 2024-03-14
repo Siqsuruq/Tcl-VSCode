@@ -160,11 +160,32 @@
         ],
         "description": "Switch Block"
     },
-    "Dictionary": {
+    "Dictionary manipulate": {
         "prefix": "dict",
         "body": [
             "dict ${1|append,exists,filter,for,get,getdef,getwithdefault,incr,info,keys,lappend,map,merge,remove,replace,set,size,unset,update,values,with|} $${0:dictName}"
         ],
         "description": "Manipulate dictionaries"
+    },
+    "Dictionary create": {
+        "prefix": "dict create",
+        "body": [
+            "dict create ${1:key1} ${2:val1} ${3:key2} ${0:val2}"
+        ],
+        "description": "Return a new dictionary that contains each of the key/value mappings listed as arguments (keys and values alternating, with each key being followed by its associated value.) "
+    },
+    "Append": {
+        "prefix": "append",
+        "body": [
+            "append ${1:var} ${0:val}"
+        ],
+        "description": "Append all of the $val arguments to the current value of variable $var."
+    },
+    "Apply": {
+        "prefix": "apply",
+        "body": [
+            "apply ${1:func} ${0:args}"
+        ],
+        "description": "Apply an anonymous function. The command apply applies the function $func to the arguments $arg1 $arg2 ... and returns the result."
     }
 }
