@@ -54,7 +54,7 @@
 				},
 				{
 					"name": "keyword.operator.tcl",
-					"match": "\\b(puts|set|pwd|append|apply|cd|tell)\\b"
+					"match": "\\b(puts|set|pwd|append|apply|cd|tell|unset|exit)\\b"
 				},
 				{
 					"name": "keyword.lists.tcl",

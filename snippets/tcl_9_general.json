@@ -201,5 +201,19 @@
             "tell $${0:channelId}"
         ],
         "description": "Return current access position for an open channel."
+    },
+    "Exit": {
+        "prefix": "exit",
+        "body": [
+            "exit ${1|returnCode, |}"
+        ],
+        "description": "Terminate the process, returning returnCode to the system as the exit status. If returnCode is not specified then it defaults to 0."
+    },
+    "Unset": {
+        "prefix": "unset",
+        "body": [
+            "unset ${1|-nocomplain, |} ${0:vars}"
+        ],
+        "description": "This command removes one or more variables. Each name is a variable name, specified in any of the ways acceptable to the set command."
     }
 }
