@@ -215,5 +215,19 @@
             "unset ${1|-nocomplain, |} ${0:vars}"
         ],
         "description": "This command removes one or more variables. Each name is a variable name, specified in any of the ways acceptable to the set command."
+    },
+    "Return default": {
+        "prefix": "return",
+        "body": [
+            "return"
+        ],
+        "description": "Return from a procedure. Normal return: same as if the code is OK(0) or code is omitted."
+    },
+    "Return code": {
+        "prefix": "return",
+        "body": [
+            "return ${1|-code|} ${2|ok,error,return,break,continue|}"
+        ],
+        "description": "Return from a procedure, with exceptional return code."
     }
 }

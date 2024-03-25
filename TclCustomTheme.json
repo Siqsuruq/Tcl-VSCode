@@ -70,6 +70,13 @@
             }
         },
         {
+            "scope":"command.option.tcl",
+            "settings":{
+                "fontStyle":"italic",
+                "foreground":"#207068"
+            }
+        },
+        {
             "scope":"entity.name.function.tcl",
             "settings":{
                 "fontStyle":"italic",

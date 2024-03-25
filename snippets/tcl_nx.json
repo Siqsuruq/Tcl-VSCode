@@ -35,7 +35,6 @@
         ],
         "description": "Class property"
     },
-
     "Class variable": {
         "prefix": "variable",
         "body": [
@@ -43,7 +42,6 @@
         ],
         "description": "Class variable"
     },
-
     "Public method": {
         "prefix": "nxpm",
         "body": [
@@ -52,7 +50,6 @@
         ],
         "description": "public class method"
     },
-
     "Private method": {
         "prefix": "nxprm",
         "body": [
@@ -60,5 +57,14 @@
             "\t\n}"
         ],
         "description": "private class method"
+    },
+    "NX create object": {
+        "prefix": "nxobj",
+        "body": [
+            "nx::Object create ${1:ObjectName} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Create a direct instance of nx::Object having an explicit name ObjectName"
     }
 }
