@@ -4,6 +4,7 @@
   "description": "Modern Tcl/Tk Language support for VS Code",
   "version": "0.0.1",
   "publisher": "Maksym Zinchenko",
+  "icon": "images/tcl_logo.png",
   "engines": {
     "vscode": "^1.87.0"
   },
