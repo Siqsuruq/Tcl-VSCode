@@ -6,6 +6,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "namespace"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -16,6 +19,9 @@
 		},
 		{
 			"include": "#naviserver_cmds"
+		},
+		{
+			"include": "#nx"
 		}
 	],
 	"repository": {
@@ -23,11 +29,19 @@
 			"name": "comment.line.tcl",
 			"match": "#.*$"
 		},
+		"namespace":{
+			"patterns": [
+				{
+					"name": "namespace.separator.tcl",
+					"match": "\\b::\\b"
+				}
+			]
+		},
 		"keywords": {
 			"patterns": [
 				{
 					"name": "commands.tcl",
-					"match": "\\b(puts|set|pwd|append|apply|cd|tell|unset|exit|if|elseif|else|while|for|foreach|return|break|continue|lappend|lassign|lindex|linsert|list|llength|lmap|lrange|lremove|lrepeat|lreplce|lreverse|dict|package)\\b"
+					"match": "\\b(puts|set|pwd|append|apply|cd|tell|unset|exit|if|elseif|else|while|for|foreach|return|break|continue|lappend|lassign|lindex|linsert|list|llength|lmap|lrange|lremove|lrepeat|lreplce|lreverse|dict|package|incr)\\b"
 				},
 				{
 					"name": "command.option.tcl",
@@ -51,11 +65,11 @@
             "patterns": [
 				{
 					"name": "variable.name.tcl",
-					"match": "(?<=\\bset\\b\\s+)(\\w+)|(?<=\\bappend\\b\\s+)(\\w+)"
+					"match": "(?<=\\bset\\b\\s+:)(\\w+)|(?<=\\bappend\\b\\s+:)(\\w+)|(?<=\\bset\\b\\s+)(\\w+)|(?<=\\bappend\\b\\s+)(\\w+)|(?<=\\bincr\\b\\s+)(\\w+)"
 				},
                 {
                     "name": "variable.other.tcl",
-                    "match": "\\$[a-zA-Z_]+\\b"
+                    "match": "\\$[a-zA-Z_]+\\b|\\$\\{:[a-zA-Z_]+\\}"
                 }
             ]
         },
@@ -75,6 +89,22 @@
 				{
 					"name": "ns.commands.tcl",
 					"match": "\\bns_\\w+\\b"
+				},
+				{
+					"name": "ns.subcommand.tcl",
+					"match": "(?<=\\bns_info\\b\\s+)(\\w+)|(?<=\\bns_adp_ctl\\b\\s+)(\\w+)"
+				}
+			]
+		}, 
+		"nx": {
+			"patterns": [
+				{
+					"name": "nx.tcl",
+					"match": "\\bnx::\\w+\\b"
+				},
+				{
+					"name": "nx.subcommand.tcl",
+					"match": "(?<=\\bnx::Class\\b\\s+)(\\w+)|(?<=\\bnx::Object\\b\\s+)(\\w+)"
 				}
 			]
 		}

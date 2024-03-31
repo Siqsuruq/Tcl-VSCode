@@ -11,7 +11,7 @@
     "NX create class from superclass": {
         "prefix": "nxcs",
         "body": [
-            "nx::Class create ${2:ClassName} -superclasses ${1:superClassNames} {",
+            "nx::Class create ${1:ClassName} -superclasses ${2:superClassNames} {",
             "\t$0",
             "}"
         ],

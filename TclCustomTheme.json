@@ -9,6 +9,12 @@
             }
         },
         {
+            "scope": "namespace.separator.tcl",
+            "settings":{
+                "foreground":"#FFFFFF"
+            }
+        },
+        {
             "scope": "commands.tcl",
             "settings": {
                 "fontStyle": "bold",
@@ -62,6 +68,24 @@
             "scope": "ns.commands.tcl",
             "settings":{
                 "foreground":"#00FFBB"
+            }
+        },
+        {
+            "scope": "ns.subcommand.tcl",
+            "settings":{
+                "foreground":"#00FF00"
+            }
+        },
+        {
+            "scope": "nx.tcl",
+            "settings":{
+                "foreground":"#00FF00"
+            }
+        },
+        {
+            "scope": "nx.subcommand.tcl",
+            "settings":{
+                "foreground":"#457B9D"
             }
         }
     ]
