@@ -3,97 +3,41 @@
     "type": "dark",
     "tokenColors": [
         {
-            "scope": "package.command.tcl",
+            "scope": "comment.line.tcl",
             "settings":{
-                "fontStyle":"bold",
-                "foreground":"#457B9D"
+                "foreground":"#2D6A4F"
             }
         },
         {
-            "scope": "package.subcommand.tcl",
-            "settings":{
-                "foreground":"#457BDD"
-            }
-        },
-        {
-            "scope": "ns_register.command.tcl",
-            "settings":{
-                "fontStyle":"bold",
-                "foreground":"#457B9D"
-            }
-        },
-        {
-            "scope": "ns_adp_ctl.command.tcl",
-            "settings":{
-                "fontStyle":"bold",
-                "foreground":"#457B9D"
-            }
-        },
-        {
-            "scope": "ns_adp_ctl.subcommand.tcl",
-            "settings":{
-                "foreground":"#457BDD"
-            }
-        },
-        {
-            "scope": "ns_adp_exception.command.tcl",
-            "settings":{
-                "fontStyle":"bold",
-                "foreground":"#457B9D"
-            }
-        },
-        {
-            "scope": "keyword.control.tcl",
+            "scope": "commands.tcl",
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#457020"
-            }
-        },
-        {
-            "scope": "keyword.operator.tcl",
-            "settings": {
-                "fontStyle": "bold",
-                "foreground": "#457020"
-            }
-        },
-        {
-            "scope": "keyword.lists.tcl",
-            "settings": {
-                "foreground": "#455000"
-            }
-        },
-        {
-            "scope":"keyword.proc.tcl",
-            "settings":{
-                "fontStyle":"bold",
-                "foreground":"#E63946"
+                "foreground": "#457BDD"
             }
         },
         {
             "scope":"command.option.tcl",
             "settings":{
                 "fontStyle":"italic",
-                "foreground":"#207068"
+                "foreground":"#F1FAEE"
             }
         },
         {
-            "scope":"entity.name.function.tcl",
+            "scope": "namespace.command.tcl",
             "settings":{
-                "fontStyle":"italic",
-                "foreground":"#207068"
+                "foreground":"#A8DADC"
             }
         },
         {
-            "scope":"keyword.dict.tcl",
+            "scope": "package.subcommand.tcl",
             "settings":{
-                "fontStyle":"bold",
-                "foreground":"#457020"
+                "foreground":"#457B9D"
             }
         },
         {
-            "scope":"dict.subcommand.tcl",
+            "scope": "dict.subcommand.tcl",
             "settings":{
-                "foreground":"#207068"
+                "foreground":"#457B9D"
             }
         },
         {
@@ -115,12 +59,11 @@
             }
         },
         {
-            "scope": "comment.line.tcl",
+            "scope": "ns.commands.tcl",
             "settings":{
-                "foreground":"#2D6A4F"
+                "foreground":"#00FFBB"
             }
         }
-
     ]
 }
 

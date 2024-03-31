@@ -3,91 +3,56 @@
 	"name": "Tcl",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		},
-		{
 			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
 		},
 		{
             "include": "#variables"
         },
-        {
-            "include": "#control"
+		{
+			"include": "#strings"
 		},
 		{
-			"include": "#nxclasses"
+			"include": "#naviserver_cmds"
 		}
 	],
 	"repository": {
+		"comments": {
+			"name": "comment.line.tcl",
+			"match": "#.*$"
+		},
 		"keywords": {
 			"patterns": [
 				{
-					"name": "command.option.tcl",
-					"match": "(-[a-zA-Z]+)"
+					"name": "commands.tcl",
+					"match": "\\b(puts|set|pwd|append|apply|cd|tell|unset|exit|if|elseif|else|while|for|foreach|return|break|continue|lappend|lassign|lindex|linsert|list|llength|lmap|lrange|lremove|lrepeat|lreplce|lreverse|dict|package)\\b"
 				},
 				{
-					"name": "package.command.tcl",
-					"match": "\\b(package)\\b"
+					"name": "command.option.tcl",
+					"match": "\\-[a-zA-Z]+\\b"
+				},
+				{
+					"name": "namespace.command.tcl",
+					"match": "\\b(namespace)\\b"
 				},
 				{
 					"name": "package.subcommand.tcl",
 					"match": "(?<=\\bpackage\\b\\s+)(\\w+)"
 				},
 				{
-					"name": "ns_register.command.tcl",
-					"match": "\\b(ns_adp_registeradp|ns_adp_registerproc|ns_adp_registerscript)\\b"
-				},
-				{
-					"name": "ns_adp_ctl.command.tcl",
-					"match": "\\b(ns_adp_ctl)\\b"
-				},
-				{
-					"name": "ns_adp_ctl.subcommand.tcl",
-					"match": "(?<=\\bns_adp_ctl\\b\\s+)(\\w+)"
-				},
-				{
-					"name": "ns_adp_exception.command.tcl",
-					"match": "\\b(ns_adp_abort|ns_adp_break|ns_adp_exception|ns_adp_return)\\b"
-				},
-				{
-					"name": "keyword.control.tcl",
-					"match": "\\b(if|elseif|else|while|for|foreach|return|break|continue)\\b"
-				},
-				{
-					"name": "keyword.operator.tcl",
-					"match": "\\b(puts|set|pwd|append|apply|cd|tell|unset|exit|)\\b"
-				},
-				{
-					"name": "keyword.lists.tcl",
-					"match": "\\b(lappend|lassign|lindex|linsert|list|llength|lmap|lrange|lremove|lrepeat|lreplce|lreverse)\\b"
-				},
-				{
-					"name": "keyword.proc.tcl",
-					"match": "\\b(proc)\\b"
-				},
-				{
-					"name": "entity.name.function.tcl",
-					"match": "(?<=\\bproc\\b\\s+)(\\w+)"
-				},
-				{
-					"name": "keyword.dict.tcl",
-					"match": "\\b(dict)\\b"
-				},
-				{
 					"name": "dict.subcommand.tcl",
 					"match": "(?<=\\bdict\\b\\s+)(\\w+)"
-				},
-				{
-					"name": "variable.name.tcl",
-					"match": "(?<=\\bset\\b\\s+)(\\w+)"
 				}
 			]
 		},
 		"variables": {
             "patterns": [
+				{
+					"name": "variable.name.tcl",
+					"match": "(?<=\\bset\\b\\s+)(\\w+)|(?<=\\bappend\\b\\s+)(\\w+)"
+				},
                 {
                     "name": "variable.other.tcl",
                     "match": "\\$[a-zA-Z_]+\\b"
@@ -105,22 +70,13 @@
 				}
 			]
 		}, 
-		"control": {
-            "patterns": [
-                {
-                    "name": "keyword.control.namespace.tcl",
-                    "match": "\\b(namespace|namespace eval|namespace export)\\b"
-                },
-                {
-                    "name": "keyword.control.error.tcl",
-                    "match": "\\b(error|catch|return\\s+-code)\\b"
-                }
-            ]
-        
-   		},
-		"comments": {
-			"name": "comment.line.tcl",
-			"match": "#.*$"
+		"naviserver_cmds": {
+			"patterns": [
+				{
+					"name": "ns.commands.tcl",
+					"match": "\\bns_\\w+\\b"
+				}
+			]
 		}
 	},
 	"scopeName": "source.tcl"
