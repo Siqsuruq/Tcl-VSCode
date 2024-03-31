@@ -41,7 +41,7 @@
 			"patterns": [
 				{
 					"name": "commands.tcl",
-					"match": "\\b(puts|set|pwd|append|apply|cd|tell|unset|exit|if|elseif|else|while|for|foreach|return|break|continue|lappend|lassign|lindex|linsert|list|llength|lmap|lrange|lremove|lrepeat|lreplce|lreverse|dict|package|incr)\\b"
+					"match": "\\b(puts|set|pwd|append|apply|cd|tell|unset|exit|if|elseif|else|while|for|foreach|return|break|continue|lappend|lassign|lindex|linsert|list|llength|lmap|lrange|lremove|lrepeat|lreplce|lreverse|dict|package|incr|proc|method|property)\\b"
 				},
 				{
 					"name": "command.option.tcl",
@@ -69,7 +69,7 @@
 				},
                 {
                     "name": "variable.other.tcl",
-                    "match": "\\$[a-zA-Z_]+\\b|\\$\\{:[a-zA-Z_]+\\}"
+                    "match": "\\$[a-zA-Z_]+\\b|\\$\\{:[a-zA-Z_]+\\}|\\$\\{[a-zA-Z_]+\\}"
                 }
             ]
         },
