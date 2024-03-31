@@ -23,7 +23,7 @@
     "languages": [{
       "id": "tcl",
       "aliases": ["Tcl", "tcl"],
-      "extensions": [".tcl",".tk",".tclapp",".tkapp",".tm",".tclclass",".tclobj"],
+      "extensions": [".tcl",".tk",".tclapp",".tkapp",".tm",".tclclass",".tclobj",".adp"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{

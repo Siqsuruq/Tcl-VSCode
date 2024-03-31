@@ -39,5 +39,12 @@
             "ns_adp_${1|abort,break,exception,return|}"
         ],
         "description": "This command enables control of the current ADP execution environment."
+    },
+    "Information about the current state of the running NaviServer." : {
+        "prefix": "ns_info",
+        "body": [
+            "ns_info ${1|address,argv0,boottime,builddate,callbacks,config,home,hostname,ipv6,locks,log,major,minor,mimetypes,name,nsd,patchlevel,pid,pools,scheduled,server,servers,shutdownpending,sockcallbacks,ssl,started,tag,threads,uptime,version|}"
+        ],
+        "description": "Return information about various aspects of the running NaviServer."
     }
 }
